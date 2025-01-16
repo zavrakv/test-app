@@ -1,0 +1,12 @@
+﻿{
+  "routes": [
+    {
+      "route": "www.zavrakv.com/*",
+      "rewrite": "/client1/index.html"
+    },
+    {
+      "route": "client1.zavrakv.com/*",
+      "rewrite": "/client2/index.html"
+    }
+  ]
+}
