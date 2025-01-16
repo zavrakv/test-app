@@ -18,6 +18,25 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
+        # Build Client 1
+      - name: Build Client 1
+        run: |
+          npm install
+          npm run index-huindex
+          npm run build
+          mv dist/test-app dist/client1
+
+      # Build Client 2
+      - name: Build Client 2
+        run: |
+          npm install
+          npm run index-huindex
+          npm run build
+          mv dist/test-app dist/client2
+
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
           lfs: false
       - name: Build And Deploy
         id: builddeploy
