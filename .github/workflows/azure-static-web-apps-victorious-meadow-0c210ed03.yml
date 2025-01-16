@@ -33,7 +33,7 @@ jobs:
           output_location: "dist/test-app1" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
       - name: Build And Deploy
-        id: builddeploy
+        id: builddeploy2
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_VICTORIOUS_MEADOW_0C210ED03 }}
